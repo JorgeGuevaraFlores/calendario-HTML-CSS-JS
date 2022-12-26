@@ -1,0 +1,47 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+
+li{
+    list-style: none;
+    margin: 5px;
+    border-right: 1px solid black;
+    text-align: center;
+}
+
+.inicio, .container, .calendario {
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    width: 90%;
+    
+    background-color: sienna;
+    flex-direction: column;
+}
+
+.calendario{
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+ol{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    padding: 0;
+}
+
+.mes{
+    text-align: center;
+    margin: 20px;
+}
+
+.primer-dia{
+    grid-column-start: var(--primer-dia-inicio);
+}
+
+#anioSeleccionado{
+    text-align: center;
+}

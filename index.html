@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calendario</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+  </head>
+  <body>
+    <div class="container">
+      <div class="inicio">
+        <label for="anio">Digita el año que quieres visualizar:</label>
+        <input
+          list="anios"
+          id="anio"
+          pattern="[0-9]+"
+          onkeypress="return numeros(event)"
+        />
+
+        <datalist id="anios">
+          <option value="2022"></option>
+          <option value="2023"></option>
+          <option value="2024"></option>
+        </datalist>
+        
+        <button type="button" id="boton" >Visualizar</button>
+      </div>
+
+      <div id="anioSeleccionado">
+
+      </div>
+
+      <div class="calendario" id="calendario">
+
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
