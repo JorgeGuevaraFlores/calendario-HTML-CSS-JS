@@ -13,7 +13,10 @@ function numeros(evt) {
   } else if (code >= 48 && code <= 57) {
     // is a number.
     return true;
-  } else {
+  } else if (code == 13){
+    validarAnio()
+  } 
+  else {
     // other keys.
     return false;
   }
@@ -94,6 +97,10 @@ if (input.value == "") {
 // console.log(input);
 
 boton.addEventListener("click", function () {
+  validarAnio();
+});
+
+const validarAnio = () => {
   if (input.value == "") {
     anioActual = new Date();
     anio = anioActual.getFullYear();
@@ -102,4 +109,4 @@ boton.addEventListener("click", function () {
     anio = parseInt(input.value);
     calendario();
   }
-});
+}

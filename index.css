@@ -1,6 +1,7 @@
 body{
     display: flex;
     justify-content: center;
+    background-color: #dbdbdb;
 }
 
 li{
@@ -18,7 +19,6 @@ li{
 .container{
     width: 90%;
     
-    background-color: sienna;
     flex-direction: column;
 }
 
@@ -44,4 +44,13 @@ ol{
 
 #anioSeleccionado{
     text-align: center;
+}
+
+h1{
+    text-align: center;
+    font-size: 50px;
+}
+
+#boton, input{
+    margin-left: 25px;
 }
