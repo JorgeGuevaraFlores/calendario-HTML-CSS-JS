@@ -1,56 +1,63 @@
-body{
-    display: flex;
-    justify-content: center;
-    background-color: #dbdbdb;
+body {
+  display: flex;
+  justify-content: center;
+  background-color: #dbdbdb;
 }
 
-li{
-    list-style: none;
-    margin: 5px;
-    border-right: 1px solid black;
-    text-align: center;
+li {
+  list-style: none;
+  margin: 5px;
+  border-right: 1px solid black;
+  text-align: center;
 }
 
-.inicio, .container, .calendario {
-    display: flex;
-    justify-content: center;
+.inicio,
+.container,
+.calendario {
+  display: flex;
+  justify-content: center;
 }
 
-.container{
-    width: 90%;
-    
-    flex-direction: column;
+.container {
+  width: 90%;
+
+  flex-direction: column;
 }
 
-.calendario{
-    flex-direction: row;
-    flex-wrap: wrap;
+.calendario {
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
-ol{
-    display: grid;
-    grid-template-columns: repeat(7,1fr);
-    padding: 0;
+ol {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  padding: 0;
 }
 
-.mes{
-    text-align: center;
-    margin: 20px;
+.mes {
+  text-align: center;
+  margin: 20px;
 }
 
-.primer-dia{
-    grid-column-start: var(--primer-dia-inicio);
+.primer-dia {
+  grid-column-start: var(--primer-dia-inicio);
 }
 
-#anioSeleccionado{
-    text-align: center;
+#anioSeleccionado {
+  text-align: center;
 }
 
-h1{
-    text-align: center;
-    font-size: 50px;
+h1 {
+  text-align: center;
+  font-size: 50px;
 }
 
-#boton, input{
-    margin-left: 25px;
+#boton,
+input {
+  margin-left: 25px;
+}
+
+.diaActual {
+  background-color: forestgreen;
 }
